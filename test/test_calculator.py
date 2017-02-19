@@ -7,7 +7,7 @@ class TestCalculator(unittest.TestCase):
         self.calc = Calculator()
 
     def test_calculator_add_method(self):
-        result = calc.add(2,2)
+        result = self.calc.add(2,2)
         self.assertEqual(4, result)
 
     def test_calculator_returns_error_when_both_arguments_not_a_number(self):
