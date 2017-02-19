@@ -10,6 +10,9 @@ class TestCalculator(unittest.TestCase):
         result = calc.add(2,2)
         self.assertEqual(4, result)
 
+    def test_calculator_returns_error_when_both_arguments_not_a_number(self):
+        self.assertRaises(ValueError, self.calc.add, 'two', 'three')
+
 
 
 if __name__ == '__main__':
